@@ -7,7 +7,7 @@ class Home extends React.Component {
   constructor() {
     super();
     this.state = {
-      apiKey: "pUcaz1TSgxMb42ndch1ep3sIZ8GOdw6G",
+      apiKey: "vFpvo92SL4z6aJsThIdkQDJZe1oOnEO3",
       fiveDays: [],
       cityPhrase: "",
       defaultCity: "Tel Aviv",
