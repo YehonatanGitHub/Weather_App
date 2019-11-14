@@ -1,14 +1,14 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Favorites from "../pages/favorits";
-import Home from "../pages/home";
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Favorites from '../pages/favorits';
+import Home from '../pages/home';
 
 function Navbar(props) {
   return (
     <Router>
       <div>
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-          <Link to="/" className="nav-link">
+          <Link to="/Weather_App" className="nav-link">
             <h2>My Weather App</h2>
           </Link>
 
