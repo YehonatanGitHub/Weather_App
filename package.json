@@ -1,8 +1,8 @@
 {
+  "homepage": "https://YehonatanGitHub.github.io/Weather_App",
   "name": "weather_app",
   "version": "0.1.0",
   "proxy": "https://dataservice.accuweather.com/forecasts/v1/daily/5day/",
-  "homepage": "https://YehonatanGitHub.github.io/Weather_App",
   "private": true,
   "dependencies": {
     "@version/react-router-v3": "^1.0.0",
@@ -19,12 +19,12 @@
     "redux": "^4.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
