@@ -9,7 +9,7 @@ function Navbar(props) {
       <div>
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
           <Link to="/Weather_App" className="nav-link">
-            <h2>My Weather App123</h2>
+            <h2>My Weather App</h2>
           </Link>
 
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
