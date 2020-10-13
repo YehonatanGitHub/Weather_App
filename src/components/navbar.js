@@ -8,7 +8,7 @@ function Navbar(props) {
     <Router>
       <div>
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-          <Link to="/Weather_App" className="nav-link">
+          <Link to="/" className="nav-link">
             <h2>My Weather App</h2>
           </Link>
 
