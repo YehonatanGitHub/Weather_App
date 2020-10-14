@@ -232,7 +232,7 @@ class Home extends React.Component {
     const divStyle = {
       paddingRight: '7px',
       paddingLeft: '7px',
-      border: '6px-solid-#ffffff!important',
+      border: '6px solid #ffffff!important',
       borderRadius: '16px',
     };
     const buttonStyle = {
@@ -320,7 +320,7 @@ class Home extends React.Component {
         <div className="container">
           <br />
           <br />
-          <div className="container border" style={divStyle}>
+          <div className="container" style={divStyle}>
             <br />
             <div className="row">
               <div className="col-sm-6">
