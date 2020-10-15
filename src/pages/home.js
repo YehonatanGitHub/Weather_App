@@ -234,7 +234,9 @@ class Home extends React.Component {
       paddingLeft: '7px',
       border: '6px solid #ffffff',
       borderRadius: '16px',
+      backgroundColor: '#dddddd9c',
     };
+
     const buttonStyle = {
       width: '45px',
       height: '45px',
