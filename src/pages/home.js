@@ -246,10 +246,15 @@ class Home extends React.Component {
       borderRadius: '50%',
       fontWeight: 'bold',
     };
-    const cardBody = {
-      paddingLeft: '25px',
-      paddingRight: '25px',
+    const cityNameRow = {
+      marginLeft: '3%',
+      marginRight: '1%'
     };
+    const cardBody = {
+      width: '115px'
+    };
+}
+    
     return (
       <div
         style={{
@@ -325,7 +330,7 @@ class Home extends React.Component {
           <div className="container" style={divStyle}>
             <br />
             <div className="row">
-              <div className="col-sm-6">
+              <div className="col-sm-6" style={cityNameRow}>
                 <h2>{this.state.defaultCity}</h2>
                 <h5>{this.state.cityMaxTemp + '° c'}</h5>
               </div>
@@ -360,7 +365,7 @@ class Home extends React.Component {
                   console.log('map 5 days ', this.state.cityPhrase);
 
                   return (
-                    <div className="card text-white bg-info" key={i}>
+                    <div className="card text-white bg-info" style={card} key={i}>
                       <div className="card-body text-center" style={cardBody}>
                         <h5 className="card-text">
                           {this.getDayOfWeek(new Date(day.Date).toLocaleDateString())}

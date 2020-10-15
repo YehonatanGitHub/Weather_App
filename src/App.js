@@ -1,5 +1,6 @@
-import React from "react";
-import Navbar from "./components/navbar";
+import React from 'react';
+import Navbar from './components/navbar';
+import StyleSheet from './components/styles';
 function App() {
   return (
     <div>
