@@ -248,13 +248,15 @@ class Home extends React.Component {
     };
     const cityNameRow = {
       marginLeft: '3%',
-      marginRight: '1%'
+      marginRight: '1%',
     };
     const cardBody = {
-      width: '115px'
+      paddingLeft: '25px',
+      paddingRight: '25px',
     };
-}
-    
+    const card = {
+      width: '115px',
+    };
     return (
       <div
         style={{
