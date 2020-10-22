@@ -245,22 +245,18 @@ class Home extends React.Component {
       padding: 0,
       borderRadius: '50%',
       fontWeight: 'bold',
-      position: 'relative',
-      top: '-44%',
-      right: '5%',
     };
     const cityNameRow = {
       marginLeft: '2%',
       marginRight: '0%',
     };
-    const cityNameDiv = {
-      position: 'relative',
-    };
     const cardBody = {
       paddingLeft: '25px',
       paddingRight: '25px',
     };
-
+    const card = {
+      width: '115px',
+    };
     return (
       <div
         style={{
@@ -336,9 +332,11 @@ class Home extends React.Component {
           <div className="container" style={divStyle}>
             <br />
             <div className="row" style={cityNameRow}>
-              <div className="col-sm-12" style={cityNameDiv}>
+              <div className="col-sm-6">
                 <h2>{this.state.defaultCity}</h2>
                 <h5>{this.state.cityMaxTemp + '° c'}</h5>
+              </div>
+              <div className="col-sm-6 ">
                 <button
                   id={this.state.cityId}
                   style={buttonStyle}
@@ -349,7 +347,7 @@ class Home extends React.Component {
                   }
                   onClick={this.followOnOff}>
                   Add
-                  <i className="fa fa-check" />
+                  <i className="fa fa-check" style={buttonStyle} />
                 </button>
               </div>
             </div>
