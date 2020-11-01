@@ -8,24 +8,26 @@ function Navbar(props) {
     <Router>
       <div>
         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-          <Link to="/" className="nav-link">
-            <h2>Weather App</h2>
-          </Link>
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <Link to="/" className="nav-link">
+                <h2>Weather App</h2>
+              </Link>
+            </li>
+          </ul>
 
-          <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/favorites/" className="nav-link">
-                  Favorites
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/favorites/" className="nav-link">
+                Favorites
+              </Link>
+            </li>
+          </ul>
         </nav>
 
         <Route path="/" exact component={Home} />
