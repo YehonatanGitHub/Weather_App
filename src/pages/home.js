@@ -346,7 +346,6 @@ class Home extends React.Component {
                       : 'btn btn-secondary btn-circle btn-circle-sm m-1 float-right ml-auto'
                   }
                   onClick={this.followOnOff}>
-                  Add
                   <i className="fa fa-check" style={buttonStyle} />
                 </button>
               </div>
