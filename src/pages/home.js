@@ -44,7 +44,7 @@ class Home extends React.Component {
         this.changeCityUi();
       }, 1000);
     } else {
-      let setCity = tempArr.find((search) => search.fromFavorits === 0);
+      let setCity = tempArr.find((search) => search.fromFavorits === 1);
       console.log('result from find serach array', setCity);
       if (setCity) {
         this.setState({ cityId: setCity.cityId });
