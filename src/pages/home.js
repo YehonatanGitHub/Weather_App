@@ -1,7 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
-import thumb from '../../src/thumb.jpg';
 import './style.css';
 
 class Home extends React.Component {
@@ -259,13 +258,7 @@ class Home extends React.Component {
       width: '115px',
     };
     return (
-      <div
-        style={{
-          backgroundImage: `url(${thumb})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '100%',
-          height: '765px',
-        }}>
+      <div className="main">
         <Modal isOpen={this.state.modalIsOpen}>
           <ModalHeader toggle={this.toggleModal.bind(this)}>
             We found more than one result. Please select from list:{' '}
