@@ -2,6 +2,11 @@
   body {
     background-image: url(../../src/clouds_mobile.png);
   }
+  span.favorite_text {
+    float: right;
+    padding-top: 4%;
+    padding-right: 4%;
+  }
 }
 @media screen and (min-width: 568px) {
   .main {

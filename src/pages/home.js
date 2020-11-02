@@ -331,8 +331,6 @@ class Home extends React.Component {
                 <h5>{this.state.cityMaxTemp + '° c'}</h5>
               </div>
               <div className="col-sm-6 ">
-                <span className="favorite_text">Add to Favorites</span>
-
                 <button
                   id={this.state.cityId}
                   style={buttonStyle}
@@ -344,6 +342,7 @@ class Home extends React.Component {
                   onClick={this.followOnOff}>
                   <i className="fa fa-check" style={buttonStyle} />
                 </button>
+                <span className="favorite_text">Add to Favorites</span>
               </div>
             </div>
             <br />
