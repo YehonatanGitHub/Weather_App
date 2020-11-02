@@ -28,7 +28,7 @@ class Home extends React.Component {
   }
 
   componentDidUpdate(prevState) {
-    if (prevState.cityId !== this.state.cityId && this.state.cityId) {
+    if (prevState.cityId !== this.state.cityId) {
       this.changeCityUi();
 
       // https://reactjs.org/docs/react-component.html#componentdidupdate
