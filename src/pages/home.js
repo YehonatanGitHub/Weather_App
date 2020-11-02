@@ -27,13 +27,13 @@ class Home extends React.Component {
     this.followOnOff = this.followOnOff.bind(this);
   }
 
-  // componentDidUpdate(prevState) {
-  //   if (prevState.cityId !== this.state.cityId && this.state.cityId) {
-  //     this.changeCityUi();
+  componentDidUpdate(prevState) {
+    if (prevState.cityId !== this.state.cityId && this.state.cityId) {
+      this.changeCityUi();
 
-  // https://reactjs.org/docs/react-component.html#componentdidupdate
-  //   }
-  // }
+      // https://reactjs.org/docs/react-component.html#componentdidupdate
+    }
+  }
 
   componentDidMount() {
     let tempArr = JSON.parse(localStorage.getItem('listOfFollowers'));
