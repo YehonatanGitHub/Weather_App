@@ -343,7 +343,9 @@ class Home extends React.Component {
                   <i className="fa fa-check" style={buttonStyle} />
                 </button>
                 <span className="favorite_text">
-                  {this.state.followBotton ? 'Remove from Favorites' : 'Add to Favorites'}
+                  {this.state.followBotton
+                    ? 'Click to Remove from Favorites'
+                    : 'Click to Add to Favorites'}
                 </span>
               </div>
             </div>
