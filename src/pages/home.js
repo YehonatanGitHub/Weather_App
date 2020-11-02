@@ -331,6 +331,8 @@ class Home extends React.Component {
                 <h5>{this.state.cityMaxTemp + '° c'}</h5>
               </div>
               <div className="col-sm-6 ">
+                <span className="favorite_text">Add to Favorites</span>
+
                 <button
                   id={this.state.cityId}
                   style={buttonStyle}
