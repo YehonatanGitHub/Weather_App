@@ -336,13 +336,15 @@ class Home extends React.Component {
                   style={buttonStyle}
                   className={
                     this.state.followBotton
-                      ? 'btn  btn-success btn-circle btn-circle-sm m-1 float-right ml-auto'
+                      ? 'btn btn-success btn-circle btn-circle-sm m-1 float-right ml-auto'
                       : 'btn btn-secondary btn-circle btn-circle-sm m-1 float-right ml-auto'
                   }
                   onClick={this.followOnOff}>
                   <i className="fa fa-check" style={buttonStyle} />
                 </button>
-                <span className="favorite_text">Add to Favorites</span>
+                <span className="favorite_text">
+                  {this.state.followBotton ? 'Remove from Favorites' : 'Add to Favorites'}
+                </span>
               </div>
             </div>
             <br />
