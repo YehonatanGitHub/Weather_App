@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import thumb from '../../src/thumb.jpg';
+import './style.css';
 
 class Home extends React.Component {
   constructor() {
