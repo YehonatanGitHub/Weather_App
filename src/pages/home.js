@@ -27,7 +27,7 @@ class Home extends React.Component {
     this.followOnOff = this.followOnOff.bind(this);
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevState) {
     if (prevState.cityId !== this.state.cityId && this.state.cityId) {
       this.changeCityUi();
 
@@ -44,7 +44,7 @@ class Home extends React.Component {
         this.changeCityUi();
       }, 1000);
     } else {
-      let setCity = tempArr.find((search) => search.fromFavorits === 1);
+      let setCity = tempArr.find((search) => search.fromFavorits === 0);
       console.log('result from find serach array', setCity);
       if (setCity) {
         this.setState({ cityId: setCity.cityId });
