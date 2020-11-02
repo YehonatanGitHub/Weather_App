@@ -37,7 +37,7 @@ class Home extends React.Component {
 
   componentDidMount() {
     let tempArr = JSON.parse(localStorage.getItem('listOfFollowers'));
-    console.log('result from find serach array', setCity);
+    console.log('result from find serach array', tempArr);
     if (tempArr === undefined || tempArr === null || tempArr.length === 0) {
       this.setState({ cityId: 215854 });
       this.setState({ defaultCity: 'Tel Aviv' });
