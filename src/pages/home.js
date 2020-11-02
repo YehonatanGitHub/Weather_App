@@ -27,7 +27,7 @@ class Home extends React.Component {
     this.followOnOff = this.followOnOff.bind(this);
   }
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps, prevState) {
     if (prevState.cityId !== this.state.cityId && this.state.cityId) {
       this.changeCityUi();
 
