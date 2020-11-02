@@ -28,7 +28,7 @@ class Home extends React.Component {
   }
 
   componentDidUpdate(prevState) {
-    if (prevState.cityId !== this.state.cityId) {
+    if (prevState.cityId !== this.state.cityId && this.state.cityId) {
       this.changeCityUi();
 
       // https://reactjs.org/docs/react-component.html#componentdidupdate
@@ -37,7 +37,7 @@ class Home extends React.Component {
 
   componentDidMount() {
     let tempArr = JSON.parse(localStorage.getItem('listOfFollowers'));
-    console.log(tempArr);
+    console.log('result from find serach array', setCity);
     if (tempArr === undefined || tempArr === null || tempArr.length === 0) {
       this.setState({ cityId: 215854 });
       this.setState({ defaultCity: 'Tel Aviv' });
