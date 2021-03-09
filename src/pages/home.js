@@ -92,7 +92,7 @@ class Home extends React.Component {
     var url = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${this.state.cityId}?apikey=${this.state.apiKey}&language=en-us&details=false&metric=true`
     axios({
       method: 'get',
-      url: `https://${url}`,
+      url: `https://cors-anywhere.herokuapp.com/${url}`,
       headers: { Origin: `${url}` },
     }).then((res) => {
       const fiveDays = res.data.DailyForecasts
@@ -120,10 +120,10 @@ class Home extends React.Component {
   handleClickSearch(event) {
     event.preventDefault()
     //send search city and gets back cityId
-    var url = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${this.state.apiKey}&q=${this.state.search}&language=en-us/`
+    var url = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${this.state.apiKey}&q=${this.state.search}&language=en-us/cors-anywhere.html`
     axios({
       method: 'get',
-      url: `https://${url}`,
+      url: `https://cors-anywhere.herokuapp.com/${url}`,
       headers: { Origin: `${url}` },
     }).then((res) => {
       const citySearchRes = res.data
