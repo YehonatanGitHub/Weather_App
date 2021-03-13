@@ -69,7 +69,7 @@ class Home extends React.Component {
         }, 1000)
       }
     }
-
+    alert('Plesae enabel CORS for this site to work https://cors-anywhere.herokuapp.com/')
     // var url = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${this.state.cityId}?apikey=${this.state.apiKey}&language=en-us&details=false&metric=true`;
     // axios({
     //   method: "get",
