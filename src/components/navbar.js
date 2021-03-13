@@ -11,7 +11,7 @@ function Navbar(props) {
           <ul class='navbar-nav'>
             <li class='nav-item '>
               <Link to='/' className='nav-link'>
-                <h2>Weather App2</h2>
+                <h2>Weather App</h2>
               </Link>
             </li>
           </ul>
